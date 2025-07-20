@@ -21,5 +21,8 @@ jobs:
       - name: Install Playwright
         run: npm install playwright
 
+      - name: Install Browsers
+        run: npx playwright install
+
       - name: Run QA Script by 24ds2000116@ds.study.iitm.ac.in
         run: node scrape_and_sum.js
